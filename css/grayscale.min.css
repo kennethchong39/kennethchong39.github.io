@@ -271,15 +271,16 @@
   /* color: rgba(255, 255, 255, .3) */
 }
 
-.contact-section .social a:hover {
+.contact-section .social a:hover{
   /* color: rgba(255, 255, 255, .5) */
   background-color: #0077b5;
   color: white;
-}
+}  
 
-.contact-section .social a:active {
+/* .contact-section .social a:active {
   color: #fff
-}
+} */
+
 
 body {
   font-family: Nunito;
