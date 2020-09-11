@@ -1,3 +1,3 @@
-# kennethchong39.github.io
+# kennethchong.dev
 
 Personal Website
