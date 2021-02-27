@@ -22,15 +22,15 @@
       text-align: center;
       height: 3rem;
       width: 3rem;
-      background: fade-out($white, 0.9);
+      background: $primary;
       border-radius: 100%;
       line-height: 3rem;
-      color: fade-out($white, 0.7);
+      color: $white;
       &:hover {
-        color: fade-out($white, 0.5);
+        color: fade-out($black, 0.5);
       }
       &:active {
-        color: $white;
+        color: $black;
       }
     }
   }
