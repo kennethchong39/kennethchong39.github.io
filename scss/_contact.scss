@@ -2,10 +2,11 @@
   padding: 5rem 0 0;
   .card {
     border: 0;
-    border-bottom: 0.25rem solid $primary;
+    border: 0.25rem solid $primary;
+    box-shadow: 10px 10px fade-out($color: $primary, $amount: 0.3);
     h4 {
       font-size: 0.8rem;
-      font-family: 'Varela Round';
+      font-family: 'Work Sans', sans-serif;
       text-transform: uppercase;
       letter-spacing: 0.15rem;
     }

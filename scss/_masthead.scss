@@ -4,41 +4,85 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .7)} 0%,#{fade-out($black, .3)} 75%,$black 100%), url('../img/bg-masthead.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  // background: linear-gradient(
+  //     to bottom,
+  //     #{fade-out($black, 0.7)} 0%,
+  //     #{fade-out($black, 0.3)} 75%,
+  //     $black 100%
+  //   ),
+  //   url('../img/bg-masthead.jpg');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: scroll;
+  // background-size: cover;
   h1 {
-    font-family: 'Varela Round';
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.8rem;
-    background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.25rem;
+    // line-height: 2.5rem;
+    // letter-spacing: 0.8rem;
+    // background: -webkit-linear-gradient(
+    //   fade-out(white, 0.1),
+    //   fade-out(white, 1)
+    // );
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
   }
   h2 {
-    max-width: 20rem;
-    font-size: 1rem;
+    // max-width: 20rem;
+    font-size: 1.25rem;
   }
-  @media(min-width: 768px) {
+  p {
+    font-size: 0.8rem;
+  }
+  @media (min-width: 768px) {
     h1 {
-      font-size: 4rem;
-      line-height: 4rem;
+      font-size: 3.5rem;
     }
   }
-  @media(min-width: 992px) {
+  @media (min-width: 992px) {
     height: 100vh;
     padding: 0;
     h1 {
-      font-size: 6.5rem;
-      line-height: 6.5rem;
-      letter-spacing: 0.8rem;
+      font-size: 4.5rem;
+      // line-height: 6.5rem;
+      // letter-spacing: 0.8rem;
     }
     h2 {
-      max-width: 30rem;
+      // max-width: 30rem;
+      font-size: 4.5rem;
+    }
+    p {
       font-size: 1.25rem;
     }
+  }
+  @media (max-width: 767px) {
+    .masthead-intro {
+      flex-direction: column-reverse;
+
+      .intro-info {
+        margin-top: 1.25rem;
+      }
+    }
+  }
+  .intro-info {
+    max-width: 500px;
+
+    &-p {
+      max-width: 500px;
+    }
+
+    &-picture {
+      max-width: 100%;
+      height: auto;
+      border: 10px solid $primary;
+      border-radius: 10%;
+      box-shadow: 15px 15px fade-out($color: $primary, $amount: 0.3);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .masthead {
+    padding: 5rem 0;
   }
 }

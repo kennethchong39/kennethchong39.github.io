@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #5bb9ea;
+  border: 1px solid #5bb9ea;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -22,8 +22,8 @@
 
 #mainNav .navbar-brand {
   color: #161616;
-  font-weight: 700;
-  padding: .9rem 0;
+  font-weight: 600;
+  padding: 0.9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -46,19 +46,19 @@
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 0;
+    color: #161616;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #161616;
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #5bb9ea;
   }
   #mainNav .nav-link:active {
-    color: white;
+    color: #5bb9ea;
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
@@ -72,15 +72,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #5bb9ea;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #1c9adc;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #5bb9ea;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #5bb9ea;
   }
 }
 
@@ -90,32 +90,24 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .masthead h1 {
-  font-family: 'Varela Round';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.25rem;
 }
 
 .masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
+}
+
+.masthead p {
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -125,54 +117,96 @@
     padding: 0;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
+    font-size: 4.5rem;
   }
   .masthead h2 {
-    max-width: 30rem;
+    font-size: 4.5rem;
+  }
+  .masthead p {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .masthead .masthead-intro {
+    flex-direction: column-reverse;
+  }
+  .masthead .masthead-intro .intro-info {
+    margin-top: 1.25rem;
+  }
+}
+
+.masthead .intro-info {
+  max-width: 500px;
+}
+
+.masthead .intro-info-p {
+  max-width: 500px;
+}
+
+.masthead .intro-info-picture {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid #5bb9ea;
+  border-radius: 10%;
+  box-shadow: 15px 15px rgba(91, 185, 234, 0.7);
+}
+
+@media (max-width: 767px) {
+  .masthead {
+    padding: 5rem 0;
   }
 }
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  font-family: 'Work Sans', sans-serif;
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   border: 0;
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #5bb9ea;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #2ea6e4;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #2ea6e4;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #1c9adc !important;
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  padding-top: 6rem;
 }
 
 .about-section p {
-  margin-bottom: 5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.about-section li {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-section .about-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 
 .projects-section .featured-text {
@@ -182,7 +216,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #5bb9ea;
   }
 }
 
@@ -196,10 +230,14 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
-    border-width: .25rem;
+    border-color: #5bb9ea;
+    border-width: 0.25rem;
     width: 30%;
   }
+}
+
+.projects-section .img-fluid {
+  border-radius: 1.25rem;
 }
 
 .signup-section {
@@ -228,18 +266,19 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border: 0.25rem solid #5bb9ea;
+  box-shadow: 10px 10px rgba(91, 185, 234, 0.7);
 }
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #5bb9ea;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -267,17 +306,17 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'Work Sans', sans-serif;
   letter-spacing: 0.0625em;
 }
 
 a {
-  color: #64a19d;
+  color: #5bb9ea;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #198bc6;
 }
 
 .bg-black {
@@ -285,11 +324,11 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #5bb9ea !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #5bb9ea !important;
 }
 
 footer {

@@ -1,7 +1,18 @@
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  padding-top: 6rem;
+  // background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
   p {
-    margin-bottom: 5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  li {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
 }
