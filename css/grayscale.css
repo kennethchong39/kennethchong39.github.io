@@ -102,7 +102,7 @@
 }
 
 .masthead p {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -123,7 +123,7 @@
     font-size: 4.5rem;
   }
   .masthead p {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -261,7 +261,7 @@
 }
 
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .contact-section .card {
@@ -289,12 +289,11 @@
 
 .contact-section .social a {
   text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: #5bb9ea;
+  height: 2rem;
+  width: 2rem;
   border-radius: 100%;
   line-height: 3rem;
-  color: #fff;
+  color: #5bb9ea;
 }
 
 .contact-section .social a:hover {
